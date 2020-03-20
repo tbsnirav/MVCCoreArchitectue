@@ -17,6 +17,7 @@ namespace Architecture.BusinessLogic.Authentication
             _userRepository = userRepository;
         }
 
+
         public override async Task ValidatePrincipal(CookieValidatePrincipalContext context)
         {
              ClaimsPrincipal userPrincipal = context.Principal;
